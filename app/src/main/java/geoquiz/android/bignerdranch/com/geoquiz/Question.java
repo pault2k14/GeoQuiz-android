@@ -9,8 +9,25 @@ public class Question {
     private int mTestResId;
     private boolean mAnswerTrue;
 
-    public Question(int mTestResId, boolean mAnswerTrue) {
+    public Question(int testResId, boolean answerTrue) {
+        mTestResId = testResId;
+        mAnswerTrue = answerTrue;
 
     }
 
+    public void setTestResId(int testResId) {
+        mTestResId = testResId;
+    }
+
+    public void setAnswerTrue(boolean answerTrue) {
+        mAnswerTrue = answerTrue;
+    }
+
+    public int getTestResId() {
+        return mTestResId;
+    }
+
+    public boolean isAnswerTrue() {
+        return mAnswerTrue;
+    }
 }
